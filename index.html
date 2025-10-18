@@ -61,6 +61,20 @@
   </select>
 </div>
 
+<!-- regex validation field -->
+<div class="form-section">
+  <label for="webUserId">Create Your Web User ID (Format: WEB-1234):</label>
+  <input 
+    type="text" 
+    id="webUserId" 
+    name="webUserId" 
+    placeholder="WEB-1234" 
+    pattern="^WEB-[0-9]{4}$" 
+    title="Enter an ID in the format WEB-1234" 
+    required 
+  />
+</div>
+
 
   <script src="script.js"></script>
 </body>
