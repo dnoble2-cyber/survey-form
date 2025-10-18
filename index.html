@@ -10,8 +10,8 @@
 
   <h1>Interactive Survey Form</h1>
 
-  <form id="surveyForm">
-    <!-- Task 1: basic form inputs -->
+  <form id="surveyForm" action="https://httpbin.org/post" method="POST">
+    <!-- basic form inputs -->
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" placeholder="Enter your name" required>
     <span class="error-message" id="nameError"></span>
@@ -50,8 +50,6 @@
   <label for="topicJS">JavaScript</label>
   <span class="error-message" id="topicsError"></span>
 
-  <button type="submit">Submit</button>
-</form>
 
 <!-- dropdown menu section -->
 <div class="form-section">
@@ -94,6 +92,9 @@
   <input type="number" id="confidenceLevel" name="confidenceLevel" min="1" max="10" required />
   <span class="error-message" id="confidenceLevelError"></span>
 </div>
+
+<button type="submit">Submit</button>
+</form>
 
   <script src="script.js"></script>
 </body>
