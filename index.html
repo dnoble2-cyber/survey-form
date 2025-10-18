@@ -21,6 +21,34 @@
     <button type="submit">Submit</button>
   </form>
 
+  <!-- choice based inputs -->
+  <p>1. What is your preferred contact method?</p>
+
+  <!-- radio button group (Single Choice) -->
+  <input type="radio" id="contactEmail" name="contactMethod" value="Email" required>
+  <label for="contactEmail">Email</label>
+
+  <input type="radio" id="contactPhone" name="contactMethod" value="Phone">
+  <label for="contactPhone">Phone</label>
+
+  <input type="radio" id="contactText" name="contactMethod" value="Text Message">
+  <label for="contactText">Text Message</label>
+
+  <p>2. Which topics are you interested in? (Select all that apply)</p>
+
+  <!-- checkbox group (Multiple Choices) -->
+  <input type="checkbox" id="topicHTML" name="topics" value="HTML">
+  <label for="topicHTML">HTML</label>
+
+  <input type="checkbox" id="topicCSS" name="topics" value="CSS">
+  <label for="topicCSS">CSS</label>
+
+  <input type="checkbox" id="topicJS" name="topics" value="JavaScript">
+  <label for="topicJS">JavaScript</label>
+
+  <button type="submit">Submit</button>
+</form>
+
   <script src="script.js"></script>
 </body>
 </html>
